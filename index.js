@@ -33,3 +33,13 @@ const commandHandler = require('./Handler/Commands.js')(bot);
 const eventHandler = require('./Handler/Events')(bot);
 const anticrashHandler = require('./Handler/anticrash');
 anticrashHandler(bot);
+// Minimal HTTP server to keep Render alive
+const http = require('http');
+const PORT = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Bot is running!');
+}).listen(PORT, () => {
+  console.log(`Dummy server listening on port ${PORT}`);
+});
