@@ -1,3 +1,7 @@
+"scripts": {
+  "start": "node index.js"
+}
+
 {
   "name": "nsfw",
   "author": "raydon.",
