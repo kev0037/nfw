@@ -1,6 +1,6 @@
 {
   "token": "",
-  "prefix": ",",
+  "prefix": "$",
   "color": "#2b2d31",
-  "nsfwChannel": true
+  "nsfwChannel": false
 }
